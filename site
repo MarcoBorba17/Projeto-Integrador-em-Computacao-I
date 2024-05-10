@@ -1,0 +1,87 @@
+import streamlit as st
+
+# Título da aplicação
+st.title("Prevenção e Tratamento da Dengue em Penápolis/SP")
+
+# Página inicial
+with st.container():
+    # Texto informativo sobre a dengue
+    st.markdown("""
+        A dengue é uma doença viral transmitida principalmente pela picada do mosquito Aedes aegypti, 
+        embora outros mosquitos do gênero Aedes também possam transmitir o vírus. Ela é causada por 
+        um dos quatro sorotipos do vírus da dengue (DEN-1, DEN-2, DEN-3 e DEN-4), pertencentes à 
+        família Flaviviridae.
+
+        Os sintomas da dengue podem variar de leves a graves e incluem febre alta, dor de cabeça 
+        intensa, dores musculares e articulares, dor atrás dos olhos, fadiga, náuseas, vômitos e 
+        erupções cutâneas. Em casos mais graves, a dengue pode evoluir para a dengue grave ou 
+        hemorrágica, que pode ser fatal se não for tratada adequadamente.
+
+        O controle da dengue envolve principalmente a eliminação dos criadouros de mosquitos, como 
+        recipientes com água parada onde os mosquitos depositam seus ovos. Além disso, medidas de 
+        proteção individual, como o uso de repelentes e roupas que cubram a maior parte do corpo, 
+        são recomendadas para evitar picadas de mosquito.
+    """)
+
+# Aba "COMO PREVINIR?"
+with st.container():
+    st.header("COMO PREVINIR?")
+
+    # Descrição das estratégias de prevenção
+    st.markdown("""
+        ## Conscientização
+
+        A conscientização sobre a prevenção da dengue visa reduzir a transmissão do vírus, promovendo 
+        o conhecimento sobre como o vírus é transmitido e como evitar a proliferação do mosquito vetor.
+
+        ## Procurar atendimento médico
+
+        Ao conscientizar as pessoas sobre os sintomas da dengue e a importância de procurar assistência 
+        médica rapidamente em caso de suspeita da doença, o objetivo é reduzir complicações e 
+        mortalidade associadas à dengue.
+
+        ## Mudança de Comportamento
+
+        A conscientização visa mudar comportamentos individuais e coletivos em relação ao controle do 
+        mosquito vetor, incentivando a eliminação de criadouros de mosquitos em áreas residenciais 
+        e públicas, bem como o uso de medidas de proteção pessoal, como repelentes e telas nas janelas.
+
+        ## Fortalecimento da Resiliência Comunitária
+
+        Ao educar e envolver as comunidades na prevenção da dengue, o objetivo é fortalecer sua 
+        capacidade de resposta a surtos e epidemias, promovendo a participação ativa na vigilância 
+        epidemiológica e na implementação de medidas de controle.
+
+        ## Redução do Impacto Socioeconômico
+
+        A conscientização sobre a prevenção da dengue também visa reduzir o impacto socioeconômico da 
+        doença, minimizando os custos associados ao tratamento médico, à perda de produtividade e ao 
+        impacto no sistema de saúde.
+
+        ## Sustentabilidade da Prevenção
+
+        Por fim, o objetivo é criar uma cultura de prevenção sustentável, onde as práticas de 
+        prevenção da dengue sejam incorporadas ao cotidiano das comunidades e mantenham-se ao longo do 
+        tempo, mesmo entre períodos de surtos da doença.
+    """)
+
+# Aba "CRONOGRAMA DE VACINAÇÃO"
+with st.container():
+    st.header("CRONOGRAMA DE VACINAÇÃO")
+
+    # Apresentação do cronograma de vacinação (a ser atualizado)
+    st.markdown("""
+        Disponibilizaremos o cronograma de vacinação do município nas próximas semanas. Fique atento!
+    """)
+
+# Aba "BOLETIM INFORMATIVO"
+with st.container():
+    st.header("BOLETIM INFORMATIVO")
+
+    # Oferta de templates para boletins informativos
+    st.markdown("""
+        Oferecemos templates personalizáveis para a criação de boletins informativos sobre a dengue. 
+        Esta é uma ferramenta útil para disseminar informações relevantes à comunidade.
+
+        Acesse nosso site para baixar os templates: https://www.penapolis.sp.gov.br/
+    """)
