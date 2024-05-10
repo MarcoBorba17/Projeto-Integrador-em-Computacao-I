@@ -85,3 +85,39 @@ with st.container():
 
         Acesse nosso site para baixar os templates: https://www.penapolis.sp.gov.br/
     """)
+# Carregar a imagem
+with open("imagem_dengue.png", "rb") as image_file:
+    image_data = image_file.read()
+
+# Codificar imagem em base64
+encoded_image = base64.b64encode(image_data).decode("utf-8")
+
+# Criar objeto BytesIO
+image_buffer = BytesIO(encoded_image)
+
+# Exibir a imagem na Aba "Boletim Informativo"
+with st.container():
+    st.header("Boletim Informativo")
+
+    # Texto informativo sobre boletins informativos
+    st.markdown("""
+        ## Crie Boletins Informativos Personalizados sobre Dengue
+
+        Compartilhe informações relevantes sobre a dengue com sua comunidade através de boletins informativos personalizados. Utilize templates prontos ou crie seus próprios designs.
+
+        **Recursos Disponíveis:**
+
+        * **Templates Gratuitos:** Acesse nosso site para baixar templates editáveis em diferentes formatos.
+        * **Dicas de Edição:** Encontre tutoriais e guias para criar boletins informativos atraentes e informativos.
+        * **Exemplos de Conteúdo:** Descubra sugestões de tópicos e informações para incluir em seus boletins.
+
+        **Juntos, podemos conscientizar a comunidade e combater a dengue!**
+    """)
+
+    # Exibir imagem
+    st.html(f"""
+        <img src="data:image/png;base64,{encoded_image}" alt="Imagem ilustrativa sobre dengue" width=500>
+    """)
+
+    # Templates (opcional)
+    # ...
